@@ -1,7 +1,9 @@
+using System.Dynamic;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Cinemachine;
 
 public class CarMovement : MonoBehaviour
 {   
@@ -11,7 +13,9 @@ public class CarMovement : MonoBehaviour
     Rigidbody2D myRigidbody2D;
     PlayerInput playerInput;
     [SerializeField] float baseVelocity;
-    
+
+    [SerializeField] CinemachineVirtualCamera carCamera;
+    [SerializeField] CinemachineVirtualCamera playerCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +32,7 @@ public class CarMovement : MonoBehaviour
         if(isPlayerInside)
         {   
             run();
+            flipSprite();
         }
     }
 
@@ -43,13 +48,26 @@ public class CarMovement : MonoBehaviour
             Destroy(other.gameObject);
             this.gameObject.AddComponent<PlayerInput>();
             playerInput = GetComponent<PlayerInput>();
-            // TODO: Add fuchu player action to playerInput.
             myRigidbody2D.gravityScale = 1;
-        
+            playerCamera.enabled = false;
+            carCamera.enabled = true;
         }
     }
 
     void OnMove(InputValue value) {
         moveInput = value.Get<Vector2>();
+        if(isPlayerInside){
+            Vector2 playerVelcoity = new Vector2(moveInput.x * baseVelocity, myRigidbody2D.velocity.y);
+            myRigidbody2D.velocity = playerVelcoity;
+        }
+    }
+
+    void flipSprite(){
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody2D.velocity.x) > Mathf.Epsilon;
+        if(playerHasHorizontalSpeed)
+        {
+            transform.localScale = new Vector2(-1f * Mathf.Sign(myRigidbody2D.velocity.x), 1f);
+            
+        }
     }
 }
