@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     Animator myAnimator;
     [SerializeField] float baseVelocity;
     [SerializeField] float baseJump;
+    [SerializeField] AudioSource jumpSound;
 
     void Start()
     {
@@ -55,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
         {
             myRigidbody2D.velocity += new Vector2(0f, baseJump);
             myAnimator.SetBool("IsJumping", true);
+            jumpSound.Play();
         }
     }
 }

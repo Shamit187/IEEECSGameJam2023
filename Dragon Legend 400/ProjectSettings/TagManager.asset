@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - FireRange
+  - Ground
+  - Dancer
+  - Enemy
   layers:
   - Default
   - TransparentFX

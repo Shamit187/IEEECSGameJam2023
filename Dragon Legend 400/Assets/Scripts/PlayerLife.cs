@@ -7,6 +7,8 @@ public class PlayerLife : MonoBehaviour
 {
     public float Life;
     public bool Immortal;
+
+    [SerializeField] AudioSource PlayerDeathSound;
     void Start()
     {
         Life = 1;
@@ -21,6 +23,7 @@ public class PlayerLife : MonoBehaviour
     }
 
     void KillYourself(){
+        PlayerDeathSound.Play();
         Invoke("ReloadScene", .1f);
     }
 

@@ -6,6 +6,7 @@ public class SpringAction : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] float SpringForce;
+    [SerializeField] AudioSource SpringSound;
     Animator myAnimator;
 
     void Start()
@@ -19,6 +20,7 @@ public class SpringAction : MonoBehaviour
         Rigidbody2D playerRigidBody = other.gameObject.GetComponent<Rigidbody2D>();
         playerRigidBody.velocity += new Vector2(playerRigidBody.velocity.x, SpringForce);
         myAnimator.SetTrigger("IsTouchingPlayer");
+        SpringSound.Play();
 
     }
 }

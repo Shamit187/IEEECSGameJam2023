@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     [SerializeField] string NextLevel;
-    void OnTriggerExit2D(Collider2D other)
+    [SerializeField] AudioSource GameOverSound;
+    void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag != "Player") return;
-        Invoke("LoadScene", 0.3f);
+        GameOverSound.Play();
+        Invoke("LoadScene", 1f);
     }
 
     void LoadScene(){
