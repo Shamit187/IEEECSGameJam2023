@@ -6,14 +6,17 @@ using UnityEngine.SceneManagement;
 public class PlayerLife : MonoBehaviour
 {
     public float Life;
+    public bool Immortal;
     void Start()
     {
         Life = 1;
+        Immortal = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Immortal) Life = 1;
         if(Life < 0) KillYourself();
     }
 

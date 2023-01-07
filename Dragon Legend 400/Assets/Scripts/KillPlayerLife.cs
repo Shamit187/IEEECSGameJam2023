@@ -10,6 +10,7 @@ public class KillPlayerLife : MonoBehaviour
     [SerializeField] float KillingSpeed;
     PlayerLife playerLife;
 
+
     void Start()
     {
         PlayerIn = false;
