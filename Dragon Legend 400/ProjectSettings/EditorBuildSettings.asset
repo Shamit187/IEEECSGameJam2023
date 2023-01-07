@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_tanjeem.unity
     guid: 3d0e25be4e264e74ba1c5efb2d0de366
+  - enabled: 1
+    path: Assets/Scenes/Level_Distraction.unity
+    guid: b4bdfb74a74527a418e2b7f497499fa6
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: ec37d1176accdfe4d941da8054a50910, type: 2}
