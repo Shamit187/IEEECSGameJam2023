@@ -859,6 +859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followingCamera: {fileID: 620422770}
+  offset: {x: 0, y: 0}
 --- !u!212 &682605856
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2570,6 +2571,10 @@ PrefabInstance:
     - target: {fileID: 2708002630307642040, guid: d03565775fc88224284684b247e9c0bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708002630307642044, guid: d03565775fc88224284684b247e9c0bb, type: 3}
+      propertyPath: NextLevel
+      value: Level_Gas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d03565775fc88224284684b247e9c0bb, type: 3}

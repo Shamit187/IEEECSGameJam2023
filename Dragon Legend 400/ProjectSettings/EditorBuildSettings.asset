@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_Gas.unity
     guid: 9f0af31958192ad41bd7d931c1933bdf
+  - enabled: 1
+    path: Assets/Scenes/Level_tanjeem.unity
+    guid: 3d0e25be4e264e74ba1c5efb2d0de366
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: ec37d1176accdfe4d941da8054a50910, type: 2}
