@@ -8,5 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_Ramp.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level_Gas.unity
+    guid: 9f0af31958192ad41bd7d931c1933bdf
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: ec37d1176accdfe4d941da8054a50910, type: 2}

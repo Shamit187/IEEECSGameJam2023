@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6360857613744202609}
   - component: {fileID: 3162473432585440714}
   - component: {fileID: 7967214240589209765}
+  - component: {fileID: 7257673417533334272}
   m_Layer: 0
   m_Name: Fuchu
   m_TagString: Player
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 2298850956475785525}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.93, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -199,4 +200,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseVelocity: 2.5
-  baseJump: 8
+  baseJump: 5
+--- !u!114 &7257673417533334272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2298850956475785525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817a5d5f242e3e84a8d90f5757d5cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
