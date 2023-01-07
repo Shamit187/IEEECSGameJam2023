@@ -24,6 +24,7 @@ public class CarMovement : MonoBehaviour
         myCollider2D = GetComponent<Collider2D>();
         myRigidbody2D = GetComponent<Rigidbody2D>();
         myRigidbody2D.gravityScale = 0;
+        carCamera.enabled = false;
     }
 
     // Update is called once per frame
