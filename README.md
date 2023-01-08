@@ -26,3 +26,11 @@ The game needs to played through Unity Editor
   <li>Then Press Build and Wait for Unity to build the project</li>
   <li>When Building Done, Enjoy Playing the game</li>
 </ol>
+
+### If that seems like a drag 
+You can Download pre built version to directly play the game on windows
+<ul>
+  <li>Version 1.0 has been uploaded to [itch.io](https://shamit187.itch.io/huh)</li>
+</ul>
+
+
