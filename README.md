@@ -5,6 +5,12 @@ Violets are blue <br>
 I live in my bed <br>
 Where I'm stuck like glue <br>
 
+## Description
+**Game Name**: Huh?<br>
+**Engine**: Unity<br>
+**Genre**: Platformer, Puzzle<br>
+Use your environment and intuition to clear out a round<br>
+
 ## Extra Packages Used
 <ul>
   <li>Cinemachine</li>
@@ -13,9 +19,10 @@ Where I'm stuck like glue <br>
   
 ## How to Install
 
-The game needs to played through Unity Editor
+To Build yourseld -> 1st method (For judgement purposes)<br>
+To Play a Pre-Built Version -> 2nd method
 
-### Using Unity Editor
+### 1: Using Unity Editor
 <ol>
   <li>Install Unity Hub</li>
   <li>Download Unity Editor version 2021.3.16f1</li>
@@ -27,10 +34,10 @@ The game needs to played through Unity Editor
   <li>When Building Done, Enjoy Playing the game</li>
 </ol>
 
-### If that seems like a drag 
+### 2: If that seems like a drag 
 You can Download pre built version to directly play the game on windows
 <ul>
-  <li>Version 1.0 has been uploaded to [itch.io](https://shamit187.itch.io/huh)</li>
+  <li>Version 1.0 has been uploaded to [itch io](https://shamit187.itch.io/huh) </li>
 </ul>
 
 
